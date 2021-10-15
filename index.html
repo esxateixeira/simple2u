@@ -24,6 +24,16 @@
 	}
 </style>
 
+<style type='text/css'>
+	.embeddedServiceHelpButton .helpButton .uiButton {
+		background-color: #005290;
+		font-family: "Arial", sans-serif;
+	}
+	.embeddedServiceHelpButton .helpButton .uiButton:focus {
+		outline: 1px solid #005290;
+	}
+</style>
+
 <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
 <script type='text/javascript'>
 	var initESW = function(gslbBaseURL) {
@@ -49,16 +59,16 @@
 		embedded_svc.settings.entryFeature = 'LiveAgent';
 
 		embedded_svc.init(
-			'https://mongeralaegon--magdev.my.salesforce.com',
-			'https://magdev-mongeralaegon.cs218.force.com/susep',
+			'https://mongeralaegon--pre.my.salesforce.com',
+			'https://pre-mongeralaegon.cs62.force.com/susep',
 			gslbBaseURL,
-			'00D8F0000004XAb',
+			'00D5C0000008tnH',
 			'Simple2u',
 			{
-				baseLiveAgentContentURL: 'https://c.la5-c1cs-ia5.salesforceliveagent.com/content',
+				baseLiveAgentContentURL: 'https://c.la2-c1cs-ia5.salesforceliveagent.com/content',
 				deploymentId: '5723o000001HinK',
-				buttonId: '5738F000000001N',
-				baseLiveAgentURL: 'https://d.la5-c1cs-ia5.salesforceliveagent.com/chat',
+				buttonId: '5735C00000000pi',
+				baseLiveAgentURL: 'https://d.la2-c1cs-ia5.salesforceliveagent.com/chat',
 				eswLiveAgentDevName: 'Simple2u',
 				isOfflineSupportEnabled: false
 			}
@@ -67,7 +77,7 @@
 
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
-		s.setAttribute('src', 'https://mongeralaegon--magdev.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.setAttribute('src', 'https://mongeralaegon--pre.my.salesforce.com/embeddedservice/5.0/esw.min.js');
 		s.onload = function() {
 			initESW(null);
 		};
